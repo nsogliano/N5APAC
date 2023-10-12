@@ -14,7 +14,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddScoped<IStudentLogic, StudentLogic>(); // Ejercicio 3
 builder.Services.AddScoped<IStudentsRepository<Student>, StudentsRepository<Student>>();
+
 
 var app = builder.Build();
 
