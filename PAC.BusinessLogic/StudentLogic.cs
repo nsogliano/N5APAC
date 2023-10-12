@@ -1,4 +1,4 @@
-﻿namespace PAC.BusinessLogic;
+namespace PAC.BusinessLogic;
 
 using System.Collections.Generic;
 using System.Data;
@@ -35,4 +35,3 @@ public class StudentLogic : IStudentLogic
         return _studentsRepository.GetStudents().Where(student => student.Age == age);
     }
 }
-
